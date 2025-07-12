@@ -217,14 +217,6 @@ const FinalCTA: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      {/* Botão CTA Fixo Mobile */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-gradient-to-r from-navy to-blue-900 border-t border-gold/30 p-4">
-        <button className="w-full bg-gradient-to-r from-gold to-yellow-600 text-navy py-4 rounded-xl font-montserrat font-bold text-lg hover:shadow-2xl hover:shadow-gold/25 transition-all duration-500 flex items-center justify-center space-x-2 animate-pulse-glow">
-          <span>Inscreva-se Agora</span>
-          <ArrowRight className="w-5 h-5" />
-        </button>
-      </div>
     </section>
   );
 };
