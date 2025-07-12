@@ -1,38 +1,41 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Surgeons from './components/Surgeons';
-import Methodology from './components/Methodology';
-import Testimonials from './components/Testimonials';
-import Problems from './components/Problems';
-import Solution from './components/Solution';
-import Benefits from './components/Benefits';
-import Program from './components/Program';
-import Pricing from './components/Pricing';
-import Guarantee from './components/Guarantee';
-import FAQ from './components/FAQ';
-import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer';
+import React, { Suspense } from 'react';
+
+const Header = React.lazy(() => import('./components/Header'));
+const Hero = React.lazy(() => import('./components/Hero'));
+const About = React.lazy(() => import('./components/About'));
+const Surgeons = React.lazy(() => import('./components/Surgeons'));
+const Methodology = React.lazy(() => import('./components/Methodology'));
+const Testimonials = React.lazy(() => import('./components/Testimonials'));
+const Problems = React.lazy(() => import('./components/Problems'));
+const Solution = React.lazy(() => import('./components/Solution'));
+const Benefits = React.lazy(() => import('./components/Benefits'));
+const Program = React.lazy(() => import('./components/Program'));
+const Pricing = React.lazy(() => import('./components/Pricing'));
+const Guarantee = React.lazy(() => import('./components/Guarantee'));
+const FAQ = React.lazy(() => import('./components/FAQ'));
+const FinalCTA = React.lazy(() => import('./components/FinalCTA'));
+const Footer = React.lazy(() => import('./components/Footer'));
 
 function App() {
   return (
     <div className="min-h-screen bg-off-white pb-20 lg:pb-0">
-      <Header />
-      <Hero />
-      <About />
-      <Surgeons />
-      <Methodology />
-      <Testimonials />
-      <Problems />
-      <Solution />
-      <Benefits />
-      <Program />
-      <Pricing />
-      <Guarantee />
-      <FAQ />
-      <FinalCTA />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+        <Hero />
+        <About />
+        <Surgeons />
+        <Methodology />
+        <Testimonials />
+        <Problems />
+        <Solution />
+        <Benefits />
+        <Program />
+        <Pricing />
+        <Guarantee />
+        <FAQ />
+        <FinalCTA />
+        <Footer />
+      </Suspense>
     </div>
   );
 }
