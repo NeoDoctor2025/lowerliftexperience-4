@@ -180,11 +180,6 @@ const FinalCTA: React.FC = () => {
                 <ArrowRight className="w-8 h-8 group-hover:translate-x-1 transition-transform duration-200" />
               </button>
               
-              <button className="group bg-gradient-to-r from-gold to-yellow-600 text-navy px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 rounded-xl font-montserrat font-bold text-lg sm:text-xl lg:text-2xl hover:shadow-2xl hover:shadow-gold/25 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 flex items-center space-x-3 sm:space-x-4 mx-auto mb-4 sm:mb-6 w-full sm:w-auto justify-center">
-                <span>Inscreva-se Agora</span>
-                <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 group-hover:translate-x-2 transition-transform duration-300" />
-              </button>
-              
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-3xl mx-auto">
                 <div className="flex items-center justify-center space-x-2">
                   <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-400 hover:scale-110 transition-transform duration-300" />
