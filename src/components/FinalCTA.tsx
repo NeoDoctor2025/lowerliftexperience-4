@@ -180,7 +180,7 @@ const FinalCTA: React.FC = () => {
                 <ArrowRight className="w-8 h-8 group-hover:translate-x-1 transition-transform duration-200" />
               </button>
               
-              <button className="group bg-gradient-to-r from-gold to-yellow-600 text-navy px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 rounded-xl font-montserrat font-bold text-lg sm:text-xl lg:text-2xl hover:shadow-2xl hover:shadow-gold/25 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 flex items-center space-x-3 sm:space-x-4 mx-auto mb-4 sm:mb-6 w-full sm:w-auto justify-center animate-pulse-glow">
+              <button className="group bg-gradient-to-r from-gold to-yellow-600 text-navy px-8 sm:px-12 lg:px-16 py-4 sm:py-5 lg:py-6 rounded-xl font-montserrat font-bold text-lg sm:text-xl lg:text-2xl hover:shadow-2xl hover:shadow-gold/25 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 flex items-center space-x-3 sm:space-x-4 mx-auto mb-4 sm:mb-6 w-full sm:w-auto justify-center">
                 <span>Inscreva-se Agora</span>
                 <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 group-hover:translate-x-2 transition-transform duration-300" />
               </button>
@@ -216,6 +216,14 @@ const FinalCTA: React.FC = () => {
             </button>
           </div>
         </div>
+      </div>
+      
+      {/* Botão CTA Fixo Mobile */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-gradient-to-r from-navy to-blue-900 border-t border-gold/30 p-4">
+        <button className="w-full bg-gradient-to-r from-gold to-yellow-600 text-navy py-4 rounded-xl font-montserrat font-bold text-lg hover:shadow-2xl hover:shadow-gold/25 transition-all duration-500 flex items-center justify-center space-x-2">
+          <span>Inscreva-se Agora</span>
+          <ArrowRight className="w-5 h-5" />
+        </button>
       </div>
     </section>
   );
